@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+nav {
+  position: sticky;
+  top: 20px;
+  background-color: gray;
+  padding: 15px;
+  width: 75vw;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+}
+
+footer {
+  display: grid;
+  place-items: center;
+  margin: 10px;
+  color: aliceblue;
+  background-color: #007777;
+  height: 500px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+ 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 255, 255);
+  border-radius: 20px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(12, 170, 209);
+}
+
+#background {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.slideshow-container {
+ display: flex;
+ justify-content: space-around;
+ gap: 50px;
+ align-items: center;
+
+}
+
+.slide{
+  display: flex;
+  justify-content: center;
+  height: auto;
+  gap: 10px;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
+.slider-button {
+  background-color: rgb(0, 200, 200);
+  color: white;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  transition: background-color 1s;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.slider-button:hover {
+  background-color: rgb(0, 150, 150);
+}
+
+.game img {
+  width: 200px;
+  height: auto;
+  border-radius: 10%;
+}
+
+.game p {
+  font-size: 20px;
+  color: white;
+  width: inherit;
+  height: auto;
+  text-align: center;
+}
+
+.game a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  padding: 100px;
+}
+
+.discount {
+  background-color: rgb(12, 170, 209);
+  border-radius: 5px;
+}
+
+.span{
+  display: flex;
+  gap: 10px;
+  justify-content: center;  
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  text-decoration: none;
+  background-color: #11b9c5; 
+  border-radius: 10px;
+}
+
+li a:hover {
+  background-color: #2433b6;
+}
+
+
+span {
+  font-size: 20px;
+  color: white;
+}
+
+@media screen and (max-width: 320px) {
+  .slideshow-container {
+    gap: 25px;
+  }
+
+  .slider-button {
+    height: 25px;
+    width: 25px;
+    font-size: 10px;
+  }
+
+  .game img {
+    width: 100px;
+    height: auto;
+  }
+
+  .game p {
+    font-size: 10px;
+  }
+
+  .title {
+    font-size: 25px;
+    padding: 50px;
+  }
+  
+}
+
+
+
+
+
